@@ -1,0 +1,231 @@
+/* ============================
+   🎨 PALETA DE CORES PRINCIPAL
+   ============================ */
+:root {
+  /* Brechó */
+  --olive: #4F5A37;
+  --nude: #E9C7C1;
+  --bege: #F2E9DD;
+  --caramelo: #C89F7A;
+  --marrom: #4A3B32;
+
+  /* Beleza Estilo Paula Alencastre */
+  --preto: #0E0E0E;
+  --gold: #D6A14D;
+  --gold-glow: #FFB95A;
+  --rose: #D89290;
+  --white: #FFFFFF;
+}
+
+/* ============================
+   RESET
+   ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bege);
+  color: var(--marrom);
+  line-height: 1.6;
+}
+
+/* ============================
+   HEADER PRINCIPAL (Index)
+   ============================ */
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("img/bg-home.jpg") center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero .subtitle {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: var(--nude);
+}
+
+/* ============================
+   🔸 CARDS DA HOME
+   ============================ */
+.cards-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.card-home {
+  width: 320px;
+  background: var(--white);
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--marrom);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.card-home:hover {
+  transform: translateY(-8px);
+}
+
+.card-home img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-home h2 {
+  font-size: 1.4rem;
+  margin: 15px 0 5px;
+}
+
+.card-home p {
+  padding: 0 20px;
+  color: #6A5C59;
+  font-size: 0.95rem;
+}
+
+.card-home button {
+  background: var(--olive);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: var(--white);
+  margin-top: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-home button:hover {
+  background: var(--marrom);
+}
+
+/* ============================
+   🔸 CABEÇALHOS INTERNOS (Brechó + Beleza)
+   ============================ */
+.page-header {
+  text-align: center;
+  padding: 70px 20px;
+  border-radius: 0 0 25px 25px;
+  background: var(--nude);
+  color: var(--marrom);
+}
+
+.page-header h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+/* ============================
+   👗 BRECHÓ — ESTÉTICA NATURAL
+   ============================ */
+.grid-products {
+  padding: 40px 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.product {
+  background: var(--white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.product .price {
+  color: var(--olive);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* ============================
+   💄 BELEZA — ESTILO LUXO PREMIUM
+   ============================ */
+.servicos {
+  max-width: 650px;
+  margin: 40px auto;
+}
+
+.servico {
+  background: var(--preto);
+  padding: 18px 22px;
+  border-radius: 15px;
+  margin-bottom: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--white);
+
+  box-shadow: 0px 0px 25px rgba(255, 180, 80, 0.25);
+  border: 1px solid var(--gold);
+}
+
+.servico h3 {
+  font-size: 1.2rem;
+  color: var(--rose);
+}
+
+.servico .price {
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: var(--bege);
+  color: var(--marrom);
+  font-size: 0.95rem;
+}
+
+/* Link voltar */
+.voltar {
+  text-decoration: none;
+  color: var(--olive);
+  font-weight: bold;
+  font-size: 1rem;
+}
